@@ -25,13 +25,11 @@ class Calculator(inputs: String) {
                 num[i] = mul.operate(num[i], num[i + 1])
                 num.removeAt(i + 1)
                 sign.removeAt(i)
-                println("${num[i]}++++++++++++++++${i}")
 
             } else if (sign[i].equals("/")) {
                 num[i] = div.operate(num[i], num[i + 1])
                 num.removeAt(i + 1)
                 sign.removeAt(i)
-                println("${num[i]}++++++++++++++++${i}")
             } else {
                 i++
             }
