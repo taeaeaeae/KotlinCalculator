@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.25 16: 28 주석삭제">
+    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.25 16: 30 테스트문장삭제">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Changs$sign$sign$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Changs$sign$sign$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Changs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Changs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Calculator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Calculator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Changs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Changs.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +141,7 @@
       <workItem from="1713939267776" duration="2332000" />
       <workItem from="1713941629816" duration="450000" />
       <workItem from="1713942180095" duration="1977000" />
-      <workItem from="1714002889223" duration="22824000" />
+      <workItem from="1714002889223" duration="26621000" />
     </task>
     <task id="LOCAL-00001" summary="2024.04.25 15:39 upload">
       <option name="closed" value="true" />
@@ -185,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714030154454</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2024.04.25 16: 30 테스트문장삭제">
+      <option name="closed" value="true" />
+      <created>1714030226554</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714030226554</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +235,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2024.04.25 15:39 upload" />
     <MESSAGE value="2024.04.25 16: 28 주석삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024.04.25 16: 28 주석삭제" />
+    <MESSAGE value="2024.04.25 16: 30 테스트문장삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024.04.25 16: 30 테스트문장삭제" />
   </component>
 </project>
