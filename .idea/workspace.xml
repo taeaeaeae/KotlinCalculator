@@ -55,7 +55,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/taeaeaeae/KotlinCalculator.git",
-    "accountId": "11f13aab-f1ab-40ba-bdef-8f8a66dea784"
+    "accountId": "fc3929bc-d91f-48f5-80c0-3acf6d2b20f7"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -133,7 +133,7 @@
       <workItem from="1713939267776" duration="2332000" />
       <workItem from="1713941629816" duration="450000" />
       <workItem from="1713942180095" duration="1977000" />
-      <workItem from="1714002889223" duration="22293000" />
+      <workItem from="1714002889223" duration="22675000" />
     </task>
     <task id="LOCAL-00001" summary="2024.04.25 15:39 upload">
       <option name="closed" value="true" />
@@ -167,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714027781564</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2024.04.25 15:39 upload">
+      <option name="closed" value="true" />
+      <created>1714029806985</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714029806985</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -5,7 +5,6 @@ fun main() {
 
     println("수식을 입력해주세요 ex)1+2-3*4/5")
     var inputs: String = readln()
-//    val validator = ValidationException()
 
     while (!validateInput(inputs)){
         println("수식을 다시 입력해주세요")
