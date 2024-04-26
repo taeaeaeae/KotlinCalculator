@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.26 09: 56 file다시 정렬">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AbstractOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/AbstractOperation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AddOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/AddOperation.kt" afterDir="false" />
-    </list>
+    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.26 11:09 추상화 도전 실패" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +133,7 @@
       <workItem from="1713939267776" duration="2332000" />
       <workItem from="1713941629816" duration="450000" />
       <workItem from="1713942180095" duration="1977000" />
-      <workItem from="1714002889223" duration="37890000" />
+      <workItem from="1714002889223" duration="38225000" />
     </task>
     <task id="LOCAL-00001" summary="2024.04.25 15:39 upload">
       <option name="closed" value="true" />
@@ -275,6 +271,7 @@
     <MESSAGE value="2024.04.25 16: 30 Stack에서 MutableList로 변경" />
     <MESSAGE value="2024.04.26 09: 56 Stack import delete" />
     <MESSAGE value="2024.04.26 09: 56 file다시 정렬" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024.04.26 09: 56 file다시 정렬" />
+    <MESSAGE value="2024.04.26 11:09 추상화 도전 실패" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024.04.26 11:09 추상화 도전 실패" />
   </component>
 </project>
