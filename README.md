@@ -76,4 +76,91 @@
      }
   ```
   - 남은 연산 처리
-  - 
+  - 덧셈뺄셈만 남은 식을 엪에서부터 처리하여 return해줌
+  ```kotlin
+     private fun lastCalc(): Double {
+       val add = AddOperation()
+       val sub = SubstractOperation()
+
+       var result = num[0]
+
+       for (j in sign.indices) {
+           if (sign[j].equals("+")) {
+               result = add.operate(result, num[j + 1])
+           } else if (sign[j].equals("-")) {
+               result = sub.operate(result, num[j + 1])
+           }
+       }
+       return result
+  }
+  ```
+  - 모든 연산 처리하여 결과를 return
+  ``` kotlin
+  fun calc(): Double {
+
+       firstCalc()
+       val result = lastCalc()
+
+       return result
+    }
+  ```
+
+  ## Main.kt
+  - readln으로 입력
+  - validateInput(inputs) 함수를 생성해 형식이 맞는지 판별
+  ```kotlin
+  inline fun validateInput(inputs: String) : Boolean {
+      val rex= "\\d+(\\s*(\\+|\\-|\\/|\\*)\\s*\\d+)+".toRegex()
+  
+      if (!rex.matches(inputs)) { return false}
+      return true
+  }
+  ```
+  - Calculator 클래스를 선언하고 calc함수를 호출
+  - 입력값과 결과 출력
+  ```kotlin
+  fun main() {
+  
+      println("수식을 입력해주세요 ex)1+2-3*4/5")
+      var inputs: String = readln()
+  
+      while (!validateInput(inputs)){
+          println("수식을 다시 입력해주세요")
+          inputs = readln()
+      }
+  
+      val calc = Calculator(inputs)
+  
+      println("${inputs}의 결과는 ${calc.calc()}입니다")
+  }
+  ```
+
+  ## 사칙연산
+  ```kotlin
+  class AddOperation {
+      fun operate(num1: Double, num2: Double): Double {
+          return num1+num2
+      }
+  }
+  ```
+  ```kotlin
+  class SubstructorOperation {
+      fun operate(num1: Double, num2: Double): Double {
+          return num1-num2
+      }
+  }
+  ```
+  ```kotlin
+  class MultiplyOperation {
+      fun operate(num1: Double, num2: Double): Double {
+          return num1*num2
+      }
+  }
+  ```
+  ```kotlin
+  class DivideOperation {
+      fun operate(num1: Double, num2: Double): Double {
+          return num1/num2
+      }
+  }
+  ```
