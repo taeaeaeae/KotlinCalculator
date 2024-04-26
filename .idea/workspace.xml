@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.26 15:20 operation 추상화">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/OrderCalculator.kt" afterDir="false" />
+    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.26 17:35 사칙연산 추상화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/AbstractOperation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/AddOperation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/DivideOperation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/MultiplyOperation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/SubstractOperation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AbstractOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/operator/AbstractOperation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AddOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/operator/AddOperation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Calculator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Calculator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/DivideOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/operator/DivideOperation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/MultiplyOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/operator/MultiplyOperation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SubstractOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/operator/SubstractOperation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/OrderCalculator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/OrderCalculator.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +140,7 @@
       <workItem from="1713939267776" duration="2332000" />
       <workItem from="1713941629816" duration="450000" />
       <workItem from="1713942180095" duration="1977000" />
-      <workItem from="1714002889223" duration="49769000" />
+      <workItem from="1714002889223" duration="52968000" />
     </task>
     <task id="LOCAL-00001" summary="2024.04.25 15:39 upload">
       <option name="closed" value="true" />
@@ -268,7 +254,31 @@
       <option name="project" value="LOCAL" />
       <updated>1714112450334</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="2024.04.26 15:20 사칙연산 추상화">
+      <option name="closed" value="true" />
+      <created>1714120509303</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714120509303</updated>
+    </task>
+    <task id="LOCAL-00016" summary="2024.04.26 15:20 기능분류">
+      <option name="closed" value="true" />
+      <created>1714120529071</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714120529071</updated>
+    </task>
+    <task id="LOCAL-00017" summary="2024.04.26 17:35 사칙연산 추상화">
+      <option name="closed" value="true" />
+      <created>1714120552920</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714120552920</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +320,9 @@
     <MESSAGE value="2024.04.26 09: 56 file다시 정렬" />
     <MESSAGE value="2024.04.26 11:09 추상화 도전 실패" />
     <MESSAGE value="2024.04.26 15:20 operation 추상화" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024.04.26 15:20 operation 추상화" />
+    <MESSAGE value="2024.04.26 15:20 사칙연산 추상화" />
+    <MESSAGE value="2024.04.26 15:20 기능분류" />
+    <MESSAGE value="2024.04.26 17:35 사칙연산 추상화" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024.04.26 17:35 사칙연산 추상화" />
   </component>
 </project>

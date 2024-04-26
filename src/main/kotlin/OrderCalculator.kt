@@ -23,7 +23,6 @@ class OrderCalculator() {
                 num.removeAt(i + 1)
                 j++
             } else if (sign[j].equals("/")) {
-                println("${num.forEach { print(it) }}")
                 num[i] = calc.operate(DivideOperation(), num[i], num[i + 1])
                 num.removeAt(i + 1)
                 j++
@@ -32,7 +31,6 @@ class OrderCalculator() {
                 j++
             }
         }
-
         return num
     }
 
@@ -49,9 +47,4 @@ class OrderCalculator() {
         }
         return result
     }
-
-    fun removeSign(sign: MutableList<String>) {
-        sign.removeAll(arrayOf("*", "/"))
-    }
-
 }
