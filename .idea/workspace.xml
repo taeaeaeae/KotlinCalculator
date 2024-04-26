@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.25 16: 30 테스트문장삭제">
+    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.26 09: 56 Stack import delete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Calculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Changs$sign$sign$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Changs$sign$sign$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/Changs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/Changs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Calculator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Calculator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Changs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Changs.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,18 +52,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "taeaeaeae"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;taeaeaeae&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/taeaeaeae/KotlinCalculator.git",
-    "accountId": "fc3929bc-d91f-48f5-80c0-3acf6d2b20f7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/taeaeaeae/KotlinCalculator.git&quot;,
+    &quot;accountId&quot;: &quot;fc3929bc-d91f-48f5-80c0-3acf6d2b20f7&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -93,7 +91,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -141,7 +139,7 @@
       <workItem from="1713939267776" duration="2332000" />
       <workItem from="1713941629816" duration="450000" />
       <workItem from="1713942180095" duration="1977000" />
-      <workItem from="1714002889223" duration="26621000" />
+      <workItem from="1714002889223" duration="35722000" />
     </task>
     <task id="LOCAL-00001" summary="2024.04.25 15:39 upload">
       <option name="closed" value="true" />
@@ -199,7 +197,39 @@
       <option name="project" value="LOCAL" />
       <updated>1714030226554</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2024.04.25 16: 30 Stack에서 MutableList로 변경">
+      <option name="closed" value="true" />
+      <created>1714034140796</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714034140796</updated>
+    </task>
+    <task id="LOCAL-00009" summary="2024.04.25 16: 30 Stack에서 MutableList로 변경">
+      <option name="closed" value="true" />
+      <created>1714035144057</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714035144057</updated>
+    </task>
+    <task id="LOCAL-00010" summary="2024.04.26 09: 56 Stack import delete">
+      <option name="closed" value="true" />
+      <created>1714092997109</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714092997109</updated>
+    </task>
+    <task id="LOCAL-00011" summary="2024.04.26 09: 56 Stack import delete">
+      <option name="closed" value="true" />
+      <created>1714093698877</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714093698877</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +266,8 @@
     <MESSAGE value="2024.04.25 15:39 upload" />
     <MESSAGE value="2024.04.25 16: 28 주석삭제" />
     <MESSAGE value="2024.04.25 16: 30 테스트문장삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024.04.25 16: 30 테스트문장삭제" />
+    <MESSAGE value="2024.04.25 16: 30 Stack에서 MutableList로 변경" />
+    <MESSAGE value="2024.04.26 09: 56 Stack import delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024.04.26 09: 56 Stack import delete" />
   </component>
 </project>

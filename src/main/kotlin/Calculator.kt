@@ -1,4 +1,3 @@
-import java.util.Stack
 
 class Calculator(inputs: String) {
     val change = Changs()
@@ -24,8 +23,6 @@ class Calculator(inputs: String) {
                 num[i] = mul.operate(num[i], num[i + 1])
                 num.removeAt(i + 1)
                 sign.removeAt(i)
-
-                num.forEach { println(it) }
 
             } else if (sign[i].equals("/")) {
                 num[i] = div.operate(num[i], num[i + 1])
