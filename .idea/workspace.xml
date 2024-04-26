@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.26 11:09 추상화 도전 실패" />
+    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.26 11:09 추상화 도전 실패">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/AbstractOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/AbstractOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/AddOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/AddOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AbstractOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/AbstractOperation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/AddOperation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/AddOperation.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +139,7 @@
       <workItem from="1713939267776" duration="2332000" />
       <workItem from="1713941629816" duration="450000" />
       <workItem from="1713942180095" duration="1977000" />
-      <workItem from="1714002889223" duration="38225000" />
+      <workItem from="1714002889223" duration="42331000" />
     </task>
     <task id="LOCAL-00001" summary="2024.04.25 15:39 upload">
       <option name="closed" value="true" />
@@ -231,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714095285643</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2024.04.26 11:09 추상화 도전 실패">
+      <option name="closed" value="true" />
+      <created>1714097714271</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714097714271</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
