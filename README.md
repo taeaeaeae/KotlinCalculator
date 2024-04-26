@@ -171,3 +171,152 @@
   ## 실행결과
   <img width="339" alt="image" src="https://github.com/taeaeaeae/KotlinCalculator/assets/46617216/0c668e89-f158-4ce1-8ddd-f68c88e9758f">
 
+추상화에 대한 감도 안잡혔는데 오늘 과제 해설 듣고 조금 이해가 가서 기분이 너무 좋다. 
+
+
+<details><summary>내일 정리</summary>
+1. 우선 AbstractOperation.kt 를 생성하여 인터페이스를 만들어줬다.
+
+ - 관리의 편의도를 위해 operator라는 패키지를 새로 생성
+
+package operator
+interface AbstractOperation {
+    fun operate(num1: Double, num2:Double): Double
+}
+
+
+2. 상속받아 사칙연산 클래서 오버라이딩
+
+package operator
+
+class AddOperation : AbstractOperation {
+    override fun operate(num1: Double, num2: Double): Double {
+        return num1+num2
+    }
+}
+
+
+3. Calculator 클래스에서 구현
+
+class Calculator() {
+    fun operate(operator: AbstractOperation, num1: Double, num2: Double): Double = operator.operate(num1,num2)
+}
+
+
+4. OrderCalculator.kt 추가
+
+- 기존 Calculator에서 생성한 함수들 실행하여 Calculator는 연산만 시행함
+
++ firstCalc 수정
+
+// 클래스에 배열을 만들어서 관리하지 않고 받아온 배열을 반환
+// 대신 sign은 함수 실행할때 "*"와 "/"제거
+private fun firstCalc(num: MutableList<Double>, sign: MutableList<String>): MutableList<Double> {
+    var i = 0	//num의 인덱스
+    var j = 0	//sign의 인덱스
+    while (i < (num.size-1)) {
+        if (sign[j].equals("*")) {
+            num[i] = calc.operate(MultiplyOperation(), num[i], num[i + 1])
+            num.removeAt(i + 1)	// 현재 인덱스 제거
+            j++		//현재 인덱스를 제거하여 기존 sign이 사용되므로 sign의 인덱스 증가
+        } else if (sign[j].equals("/")) {
+            num[i] = calc.operate(DivideOperation(), num[i], num[i + 1])
+            num.removeAt(i + 1)
+            j++
+        } else {
+            i++		//곱셈이나 나눗셈이 아닐 때 다음으로 넘어감
+            j++
+        }
+    }
+    return num		// 곱셈 나눗셈 처리를 완료한 숫자리스트 반환
+}
+
+
+
+
+- lastCalculator는 추상화메소드 사용부분만 변경
+
+-  order 함수 생성
+
+fun order(num: MutableList<Double>, sign: MutableList<String>): Double {
+    val number = firstCalc(num, sign)		// 곱셈나눗셈 먼저 연산하여 반환된 숫자리스트 저장
+    sign.removeAll(arrayOf("*", "/"))		// 연산 완료한 "*","/" 모두 제거
+    val result = lastCalc(number, sign)		// 남은 덧셈 뺄셈 진행 후 값 리턴
+    return result
+}
+
+
+- 전체코드
+
+class OrderCalculator() {
+
+    val calc = Calculator()
+
+    fun order(num: MutableList<Double>, sign: MutableList<String>): Double {
+        val number = firstCalc(num, sign)
+        sign.removeAll(arrayOf("*", "/"))
+        val result = lastCalc(number, sign)
+        return result
+    }
+
+    private fun firstCalc(num: MutableList<Double>, sign: MutableList<String>): MutableList<Double> {
+        var i = 0
+        var j = 0
+        while (i < (num.size-1)) {
+            if (sign[j].equals("*")) {
+                num[i] = calc.operate(MultiplyOperation(), num[i], num[i + 1])
+                num.removeAt(i + 1)
+                j++
+            } else if (sign[j].equals("/")) {
+                num[i] = calc.operate(DivideOperation(), num[i], num[i + 1])
+                num.removeAt(i + 1)
+                j++
+            } else {
+                i++
+                j++
+            }
+        }
+        return num
+    }
+
+    private fun lastCalc(num: MutableList<Double>, sign: MutableList<String>): Double {
+
+        var result = num[0]
+
+        for (j in sign.indices) {
+            if (sign[j].equals("+")) {
+                result = calc.operate(AddOperation(), result, num[j + 1])
+            } else if (sign[j].equals("-")) {
+                result = calc.operate(SubstractOperation(), result, num[j + 1])
+            }
+        }
+        return result
+    }
+}
+
+
+5. Main.kt
+
+fun main() {
+
+    println("수식을 입력해주세요 ex)1+2-3*4/5")
+    var inputs: String = readln()
+
+    while (!validateInput(inputs)){
+        println("수식을 다시 입력해주세요")
+        inputs = readln()
+    }
+
+    val change = Changs()			// 원래 Calculator에서 했던 작업을 메인으로 가져옴
+    val num = change.num(inputs)
+    val sign = change.sign(inputs)
+    val order = OrderCalculator()	
+
+    // order.order(num,sign)		
+    // 예전 코드처럼 input을 통째로 가지고다니는게 비효율적이라고 생각해서
+    // firstCalc함수를 수정하여 num반환 후 sing 배열의 부호를 따로 삭제
+
+
+    println("${inputs}의 결과는 ${order.order(num,sign)}입니다")
+}
+</detail>
