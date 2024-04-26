@@ -11,9 +11,17 @@ fun main() {
         inputs = readln()
     }
 
-    val calc = Calculator(inputs)
+    val change = Changs()
+    val order = OrderCalculator()
+    val num = change.num(inputs)
+    val sign = change.sign(inputs)
 
-    println("${inputs}의 결과는 ${calc.calc()}입니다")
+    order.order(num,sign)
+
+
+//    val calc = Calculator()
+
+    println("${inputs}의 결과는 ${order.order(num,sign)}입니다")
 }
 
 
