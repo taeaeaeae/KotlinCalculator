@@ -16,10 +16,6 @@ fun main() {
     val num = change.num(inputs)
     val sign = change.sign(inputs)
 
-    order.order(num,sign)
-
-
-//    val calc = Calculator()
 
     println("${inputs}의 결과는 ${order.order(num,sign)}입니다")
 }

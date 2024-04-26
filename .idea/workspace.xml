@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.26 17:35 사칙연산 추상화">
+    <list default="true" id="5fe98e35-b490-46e7-b538-f4a350ef66ca" name="Changes" comment="2024.04.26 19:32 함수 호출하는 함수가 중복인것같아서 빼고 직접호출">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/OrderCalculator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/OrderCalculator.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +140,7 @@
       <workItem from="1713939267776" duration="2332000" />
       <workItem from="1713941629816" duration="450000" />
       <workItem from="1713942180095" duration="1977000" />
-      <workItem from="1714002889223" duration="52968000" />
+      <workItem from="1714002889223" duration="56980000" />
     </task>
     <task id="LOCAL-00001" summary="2024.04.25 15:39 upload">
       <option name="closed" value="true" />
@@ -278,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714120552920</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="2024.04.26 19:32 함수 호출하는 함수가 중복인것같아서 빼고 직접호출">
+      <option name="closed" value="true" />
+      <created>1714127592828</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714127592828</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +331,7 @@
     <MESSAGE value="2024.04.26 15:20 사칙연산 추상화" />
     <MESSAGE value="2024.04.26 15:20 기능분류" />
     <MESSAGE value="2024.04.26 17:35 사칙연산 추상화" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024.04.26 17:35 사칙연산 추상화" />
+    <MESSAGE value="2024.04.26 19:32 함수 호출하는 함수가 중복인것같아서 빼고 직접호출" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024.04.26 19:32 함수 호출하는 함수가 중복인것같아서 빼고 직접호출" />
   </component>
 </project>
