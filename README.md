@@ -136,7 +136,7 @@
   ```
 
   ## 사칙연산
-  <details><summary>추상화 전/summary>
+  <details><summary>추상화 전</summary>
 
   ```kotlin
   class AddOperation {
