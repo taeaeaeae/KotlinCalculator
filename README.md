@@ -136,6 +136,8 @@
   ```
 
   ## 사칙연산
+  <details><summary>추상화 전/summary>
+
   ```kotlin
   class AddOperation {
       fun operate(num1: Double, num2: Double): Double {
@@ -164,6 +166,7 @@
       }
   }
   ```
+</details> 
 
   ## 실행결과
   <img width="339" alt="image" src="https://github.com/taeaeaeae/KotlinCalculator/assets/46617216/0c668e89-f158-4ce1-8ddd-f68c88e9758f">
