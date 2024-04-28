@@ -171,22 +171,20 @@
   ## 실행결과
   <img width="339" alt="image" src="https://github.com/taeaeaeae/KotlinCalculator/assets/46617216/0c668e89-f158-4ce1-8ddd-f68c88e9758f">
 
-추상화에 대한 감도 안잡혔는데 오늘 과제 해설 듣고 조금 이해가 가서 기분이 너무 좋다. 
-
 
 <details><summary>내일 정리</summary>
 1. 우선 AbstractOperation.kt 를 생성하여 인터페이스를 만들어줬다.
 
  - 관리의 편의도를 위해 operator라는 패키지를 새로 생성
-
+```kotlin
 package operator
 interface AbstractOperation {
     fun operate(num1: Double, num2:Double): Double
 }
-
+```
 
 2. 상속받아 사칙연산 클래서 오버라이딩
-
+```kotlin
 package operator
 
 class AddOperation : AbstractOperation {
@@ -194,21 +192,21 @@ class AddOperation : AbstractOperation {
         return num1+num2
     }
 }
-
+```
 
 3. Calculator 클래스에서 구현
-
+```kotlin
 class Calculator() {
     fun operate(operator: AbstractOperation, num1: Double, num2: Double): Double = operator.operate(num1,num2)
 }
-
+```
 
 4. OrderCalculator.kt 추가
 
 - 기존 Calculator에서 생성한 함수들 실행하여 Calculator는 연산만 시행함
 
 + firstCalc 수정
-
+```kotlin
 // 클래스에 배열을 만들어서 관리하지 않고 받아온 배열을 반환
 // 대신 sign은 함수 실행할때 "*"와 "/"제거
 private fun firstCalc(num: MutableList<Double>, sign: MutableList<String>): MutableList<Double> {
@@ -230,24 +228,24 @@ private fun firstCalc(num: MutableList<Double>, sign: MutableList<String>): Muta
     }
     return num		// 곱셈 나눗셈 처리를 완료한 숫자리스트 반환
 }
-
+```
 
 
 
 - lastCalculator는 추상화메소드 사용부분만 변경
 
 -  order 함수 생성
-
+```kotlin
 fun order(num: MutableList<Double>, sign: MutableList<String>): Double {
     val number = firstCalc(num, sign)		// 곱셈나눗셈 먼저 연산하여 반환된 숫자리스트 저장
     sign.removeAll(arrayOf("*", "/"))		// 연산 완료한 "*","/" 모두 제거
     val result = lastCalc(number, sign)		// 남은 덧셈 뺄셈 진행 후 값 리턴
     return result
 }
-
+```
 
 - 전체코드
-
+```kotlin
 class OrderCalculator() {
 
     val calc = Calculator()
@@ -293,10 +291,10 @@ class OrderCalculator() {
         return result
     }
 }
-
+```
 
 5. Main.kt
-
+```kotlin
 fun main() {
 
     println("수식을 입력해주세요 ex)1+2-3*4/5")
@@ -319,4 +317,5 @@ fun main() {
 
     println("${inputs}의 결과는 ${order.order(num,sign)}입니다")
 }
+```
 </detail>
