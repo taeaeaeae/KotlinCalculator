@@ -47,33 +47,31 @@
 
   ## 연산처리
   - 곱셈 나눗셈 먼저 처리
-  - 리스트를 순회하며 곱셈 나눗셈을 먼저 찾으면 찾았을때의 위치에서 바로 다음 숫자와 연산 수행 후 현재위치에 덮어 씌움, 그 후 연산에 쓴 뒷숫자 제거
+  - 리스트를 순회하며 곱셈 나눗셈을 먼저 찾으면 찾았을때의 위치에서 바로 다음 숫자와 연산 수행 후 현재위치에 덮어 씌움
   - Calculator.kt 안에서만 사용하기 때문에 private으로 선언
   - 곱하기나 나누기가 아닐시 다음으로 넘어감
   - 최종적으로 식을 덧셈과 뺄셈만 남도록 정리해줌 ex) 12+23*34/17-56/2 일때 12+46-28 만 남도록 함
+  - 마지막으로 남은 숫자 리턴
   ```kotlin
-    private fun firstCalc() {
-         val mul = MultiplyOperation()
-         val div = DivideOperation()
-  
-         var i = 0
-         while (i < (sign.size)) {
-             if (sign[i].equals("*")) {
-                 num[i] = mul.operate(num[i], num[i + 1])
-                 num.removeAt(i + 1)
-                 sign.removeAt(i)
-  
-                 num.forEach { println(it) }
-  
-             } else if (sign[i].equals("/")) {
-                 num[i] = div.operate(num[i], num[i + 1])
-                 num.removeAt(i + 1)
-                 sign.removeAt(i)
-             } else {
-                 i++
-             }
-         }
-     }
+    private fun firstCalc(num: MutableList<Double>, sign: MutableList<String>): MutableList<Double> {
+        var i = 0
+        var j = 0
+        while (i < (num.size-1)) {
+            if (sign[j].equals("*")) {
+                num[i] = calc.operate(MultiplyOperation(), num[i], num[i + 1])
+                num.removeAt(i + 1)
+                j++
+            } else if (sign[j].equals("/")) {
+                num[i] = calc.operate(DivideOperation(), num[i], num[i + 1])
+                num.removeAt(i + 1)
+                j++
+            } else {
+                i++
+                j++
+            }
+        }
+        return num
+    }
   ```
   - 남은 연산 처리
   - 덧셈뺄셈만 남은 식을 엪에서부터 처리하여 return해줌
@@ -94,14 +92,13 @@
        return result
   }
   ```
-  - 모든 연산 처리하여 결과를 return
+  - 연산 처리 후 sing에서 곱하기와 나누기를 모두 제거하고 마지막 연산하여 리턴
   ``` kotlin
-  fun calc(): Double {
-
-       firstCalc()
-       val result = lastCalc()
-
-       return result
+    fun order(num: MutableList<Double>, sign: MutableList<String>): Double {
+        val number = firstCalc(num, sign)
+        sign.removeAll(arrayOf("*", "/"))
+        val result = lastCalc(number, sign)
+        return result
     }
   ```
 
