@@ -115,22 +115,29 @@
   ```
   - Calculator 클래스를 선언하고 calc함수를 호출
   - 입력값과 결과 출력
-  ```kotlin
-  fun main() {
-  
-      println("수식을 입력해주세요 ex)1+2-3*4/5")
-      var inputs: String = readln()
-  
-      while (!validateInput(inputs)){
-          println("수식을 다시 입력해주세요")
-          inputs = readln()
-      }
-  
-      val calc = Calculator(inputs)
-  
-      println("${inputs}의 결과는 ${calc.calc()}입니다")
-  }
-  ```
+```kotlin
+fun main() {
+
+    println("수식을 입력해주세요 ex)1+2-3*4/5")
+    var inputs: String = readln()
+
+    while (!validateInput(inputs)){
+        println("수식을 다시 입력해주세요")
+        inputs = readln()
+    }
+
+    val change = Changs()			// 원래 Calculator에서 했던 작업을 메인으로 가져옴
+    val num = change.num(inputs)
+    val sign = change.sign(inputs)
+    val order = OrderCalculator()
+
+    // 예전 코드처럼 input을 통째로 가지고다니는게 비효율적이라고 생각해서
+    // firstCalc함수를 수정하여 num반환 후 sing 배열의 부호를 따로 삭제
+
+
+    println("${inputs}의 결과는 ${order.order(num,sign)}입니다")
+}
+```
 
   ## 사칙연산
   <details><summary>추상화 전</summary>
@@ -305,9 +312,8 @@ fun main() {
     val change = Changs()			// 원래 Calculator에서 했던 작업을 메인으로 가져옴
     val num = change.num(inputs)
     val sign = change.sign(inputs)
-    val order = OrderCalculator()	
+    val order = OrderCalculator()
 
-    // order.order(num,sign)		
     // 예전 코드처럼 input을 통째로 가지고다니는게 비효율적이라고 생각해서
     // firstCalc함수를 수정하여 num반환 후 sing 배열의 부호를 따로 삭제
 
